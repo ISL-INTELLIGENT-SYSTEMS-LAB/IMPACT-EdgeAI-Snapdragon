@@ -1,0 +1,49 @@
+SNPE SDK version:,2.21.0.240401120655_85612
+
+Configuration used:
+Name,Mars-ResNet50-Quantized
+HostRootPath,/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/
+HostResultsDir,/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/Benchmarking_script/Results
+DevicePath,/data/matt/impact_data/
+Devices,6f4e8bdf
+HostName,127.0.0.1
+Runs,5
+Model:Name,mars_quant
+Model:Dlc,/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/Models/Mars/mars_quant.dlc
+Model:UDO,
+Model:InputList,input_list_raw.txt
+Model:Data,/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/Benchmarking_datasets/Mars/Raw_images/
+Model:InputDimensions,"input:1,224,224,3"
+Runtimes,"GPU,GPU_ub_float,GPU_ub_auto,CPU,CPU_ub_float,CPU_ub_auto"
+Architectures,aarch64
+Compiler,gcc8.2
+C++ Standard Library,
+Measurements,timing
+PerfProfile,high_performance
+ProfilingLevel,basic
+Date,2024-05-15 16:20:54.289258
+
+Device Info:
+ro.product.name,unknown
+ro.serialno,unknown
+ro.product.model,unknown
+ro.product.board,unknown
+ro.product.brand,unknown
+ro.product.device,unknown
+ro.product.manufacturer,unknown
+ro.product.cpu.abi,unknown
+ro.build.au_rev,unknown
+ro.build.description,unknown
+ro.build.version.sdk,unknown
+Meta_Build_ID,unknown
+OS_Type,unknown
+
+,, ,GPU_timing(5 runs), , , ,GPU_ub_float_timing(5 runs), , , ,GPU_ub_auto_timing(5 runs), , , ,CPU_timing(5 runs), , , ,CPU_ub_float_timing(5 runs), , , ,CPU_ub_auto_timing(5 runs), , , 
+,, ,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime
+,,Load,47,57,43,CPU,44,46,42,CPU,46,53,42,CPU,52,53,52,CPU,64,116,51,CPU,107,143,53,CPU
+,,Deserialize,26,32,23,CPU,24,27,23,CPU,25,30,21,CPU,27,30,25,CPU,32,56,25,CPU,53,72,29,CPU
+,,Create,837429,852982,817353,CPU,843175,861447,830730,CPU,841689,847459,832224,CPU,260814,264280,255470,CPU,263141,270286,258230,CPU,270822,276267,265350,CPU
+,,Init,841008,856575,820398,CPU,846423,864549,834347,CPU,845293,851104,836291,CPU,263549,266979,258085,CPU,266303,274905,260664,CPU,274527,279998,268404,CPU
+,,De-Init,64474,70156,58192,CPU,62603,63852,61658,CPU,65608,69272,61895,CPU,5880,6111,5720,CPU,5939,6249,5648,CPU,5909,6067,5812,CPU
+,,Total Inference Time,43136,43267,42887,CPU,43204,43316,43066,CPU,43675,43763,43584,CPU,117958,118020,117893,CPU,118280,118640,118008,CPU,115756,116172,115333,CPU
+

@@ -1,0 +1,22 @@
+{
+    "Name":"Mars-ResNet50-Quantized",
+    "HostRootPath": "/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/",
+    "HostResultsDir":"Results/",
+    "DevicePath":"/data/matt/impact_data/",
+    "Devices":["6f4e8bdf"],
+    "HostName": "127.0.0.1",
+    "Runs":5,
+
+    "Model": {
+        "Name": "mars_quant",
+        "Dlc": "/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/Models/Mars/mars_quant.dlc",
+        "InputList": "/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/Benchmarking_datasets/Mars/input_list_raw.txt",
+        "Data": [
+            "/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/Benchmarking_datasets/Mars/Raw_images/"
+            ]
+    },
+
+    "Runtimes":["GPU","CPU"],
+    "Measurements": ["timing"]
+
+ }

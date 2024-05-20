@@ -1,0 +1,28 @@
+Log File Created: Mon Apr 15 17:06:15 2024
+Time Scale: 1e-06
+Epoch Timestamp: 1713215175298676 Steady Clock Timestamp: 15244977778
+Software library version: 2.21.0.240401120655_85612
+
+Dnn Runtime Load/Deserialize/Create/De-Init Statistics:
+--------------------------------------------------
+Load: 141 us
+Deserialize: 69 us
+Create: 272968 us
+
+Init: 277899 us
+De-Init: 5912 us
+
+Create Network(s): 0 NONE
+RPC Init Time: 0 NONE
+Snpe Accelerator Init Time: 0 NONE
+Accelerator Init Time: 0 NONE
+
+Average SNPE Statistics:
+------------------------------
+Total Inference Time: 116172 us
+Forward Propagate Time: 0 NONE
+RPC Execute Time: 0 NONE
+Snpe Accelerator Time: 0 NONE
+Num times yield occured: 0 NONE
+Accelerator Time: 0 NONE
+

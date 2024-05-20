@@ -1,0 +1,22 @@
+{
+    "Name":"Fire-ResNet50-Baseline",
+    "HostRootPath": "/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/",
+    "HostResultsDir":"Results-Fire-Baseline/",
+    "DevicePath":"/data/matt/impact_data/",
+    "Devices":["6f4e8bdf"],
+    "HostName": "127.0.0.1",
+    "Runs":5,
+
+    "Model": {
+        "Name": "fire_baseline",
+        "Dlc": "/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/Models/Fire/fire_baseline.dlc",
+        "InputList": "/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/Benchmarking_datasets/Fire/input_list_raw.txt",
+        "Data": [
+            "/home/matt/Documents/IMPACT-EdgeAI-Snapdragon/Benchmarking_datasets/Fire/Raw_images/"
+            ]
+    },
+
+    "Runtimes":["GPU","CPU"],
+    "Measurements": ["timing"]
+
+ }

@@ -1,0 +1,49 @@
+SNPE SDK version:,2.21.0.240401120655_85612
+
+Configuration used:
+Name,Mars Classifier
+HostRootPath,/home/matt/Documents/Snapdragon/Benchmarking/
+HostResultsDir,/home/matt/Documents/Snapdragon/Benchmarking/results
+DevicePath,/data/matt/impact_data/
+Devices,6f4e8bdf
+HostName,127.0.0.1
+Runs,5
+Model:Name,mars_detection
+Model:Dlc,/home/matt/Documents/Snapdragon/raw_images/mars_detection.dlc
+Model:UDO,
+Model:InputList,input_list_raw.txt
+Model:Data,/home/matt/Documents/Snapdragon/raw_images/
+Model:InputDimensions,"input:1,224,224,3"
+Runtimes,"GPU,GPU_ub_float,GPU_ub_auto,CPU,CPU_ub_float,CPU_ub_auto"
+Architectures,aarch64
+Compiler,gcc8.2
+C++ Standard Library,
+Measurements,timing
+PerfProfile,high_performance
+ProfilingLevel,basic
+Date,2024-05-02 16:47:21.637124
+
+Device Info:
+ro.product.name,unknown
+ro.serialno,unknown
+ro.product.model,unknown
+ro.product.board,unknown
+ro.product.brand,unknown
+ro.product.device,unknown
+ro.product.manufacturer,unknown
+ro.product.cpu.abi,unknown
+ro.build.au_rev,unknown
+ro.build.description,unknown
+ro.build.version.sdk,unknown
+Meta_Build_ID,unknown
+OS_Type,unknown
+
+,, ,GPU_timing(5 runs), , , ,GPU_ub_float_timing(5 runs), , , ,GPU_ub_auto_timing(5 runs), , , ,CPU_timing(5 runs), , , ,CPU_ub_float_timing(5 runs), , , ,CPU_ub_auto_timing(5 runs), , , 
+,, ,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime,avg (us),max (us),min (us),runtime
+,,Load,37,41,35,CPU,37,44,34,CPU,35,37,33,CPU,40,45,34,CPU,40,42,39,CPU,39,44,34,CPU
+,,Deserialize,26,28,23,CPU,27,31,25,CPU,26,28,25,CPU,27,32,22,CPU,30,32,30,CPU,27,31,22,CPU
+,,Create,828884,833489,825699,CPU,832229,839167,822324,CPU,826073,834146,820196,CPU,235749,238809,233766,CPU,234537,237616,230544,CPU,234894,237128,233426,CPU
+,,Init,834639,839309,831372,CPU,838028,844910,828042,CPU,831849,839801,826134,CPU,240926,243909,239151,CPU,239835,243077,235588,CPU,240188,242231,238601,CPU
+,,De-Init,64137,68797,58963,CPU,64243,73167,59235,CPU,64890,74646,59727,CPU,72290,73216,71356,CPU,72790,73692,71701,CPU,71821,73579,69912,CPU
+,,Total Inference Time,43393,44538,43062,CPU,43663,43857,43487,CPU,43529,43887,43219,CPU,118597,118831,118396,CPU,115034,115466,114647,CPU,114741,115146,114263,CPU
+
